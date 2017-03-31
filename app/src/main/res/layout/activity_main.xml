@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spp.keispp.hashing.MainActivity">
+
+    <EditText
+        android:id="@+id/txt_Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_Check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Input"
+        android:text="check hash sha256" />
+
+    <TextView
+        android:id="@+id/lbl_Byte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Check"
+        android:layout_marginTop="50dp"
+        android:text="Byte: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_Hash"
+        android:layout_below="@+id/lbl_Byte"
+        android:layout_marginTop="10dp"
+        android:text="Hash: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_Original"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_Hash"
+        android:layout_marginTop="10dp"
+        android:text="Original: "
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>
